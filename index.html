@@ -411,7 +411,7 @@
         <div class="container">
             <div class="subscribe-content">
                 <h2>Stay Updated</h2>
-                <p>Be the first to know when we launch! Enter your email below to get notified about our premiere episode and future releases.</p>
+                <p>Be the first to know when we launch! Enter your email below to get notified about our premiere episode.</p>
                 <script type="text/javascript" src="https://form.jotform.com/jsform/261378169851064"></script>
                 <p>Note: If you submitted before or on May 18, please resubmit.</p>
             </div>
@@ -436,25 +436,6 @@
                     });
                 }
             });
-        });
-
-        // Email subscription form
-        document.getElementById('subscribeForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const email = document.getElementById('emailInput').value;
-            const messageDiv = document.getElementById('form-message');
-
-            // Simulate form submission
-            messageDiv.style.color = '#27ae60';
-            messageDiv.textContent = 'Thank you for subscribing! We\'ll notify you when we launch.';
-
-            // Clear form
-            document.getElementById('emailInput').value = '';
-
-            // Clear message after 5 seconds
-            setTimeout(() => {
-                messageDiv.textContent = '';
-            }, 5000);
         });
 
         // Add active state to navigation based on scroll position
